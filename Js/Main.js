@@ -27,10 +27,14 @@ closebutton_openworld.onclick = function() {
 
 //////////////////////////////////////////////////////////////////////////////
 
-var product = document.getElementById("ItemBox")
-var uploadproduct = document.getElementById("UploadProduct");
+var modal_openworld = document.getElementById("OpenWorldWindow");
+var openwindowbutton_openworld = document.getElementById("OpenWorldButton");
+var closebutton_openworld = document.getElementById("CloseOpenWorld");
 
-uploadproduct.onclick = function() {
-    product.style.display = "blcok";
+openwindowbutton_openworld.onclick = function() {
+    modal_openworld.style.display = "flex";
 }
 
+closebutton_openworld.onclick = function() {
+    modal_openworld.style.display = "none";
+}
