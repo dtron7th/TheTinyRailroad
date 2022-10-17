@@ -1,0 +1,35 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Oswald', sans-serif;
+}
+
+@font-face {
+    font-family: 'Noto Sans Mono', monospace;
+    src: url(/Fonts/NotoSansMono-VariableFont_wdth\,wght.ttf);
+}
+
+@font-face {
+    font-family: 'Red Hat Mono', monospace;
+    src: url(/Fonts/RedHatMono-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: 'Oswald', sans-serif;
+    src: url(/Fonts/Oswald-VariableFont_wght.ttf);
+}
+
+::-webkit-scrollbar {
+    width: 2px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    background: rgb(34, 34, 34); 
+}
+   
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(56, 56, 56); 
+}
+  

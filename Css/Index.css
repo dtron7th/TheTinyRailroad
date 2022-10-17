@@ -1,0 +1,479 @@
+:root {
+    --Transition_Aninmation : 100ms;
+    --Animation_Color : rgb(255, 28, 28);
+    --Hover_Button_Color-1 : rgb(87, 90, 62);
+    
+    --Button_Color-1 : rgb(156, 156, 156);
+
+    --Font_Color-1 : rgb(255, 255, 255);
+
+    --Font_Size-Title : 20px;
+
+    --Font_Size-1 : 11px;
+    --Font_Size-2 : 13px;
+    --Font_Size-Icon : 15px;
+}
+
+body {
+    background-color: rgb(20, 20, 20);
+    display: flex;
+    justify-content: center;
+}
+
+.Profile > button {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    outline: none;
+    border: none;
+    background: none;
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+    color: aliceblue;
+    transition: var(--Transition_Aninmation);
+    cursor: pointer;
+}
+
+.Title {
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    margin-top: 100px;
+    font-size: 50px;
+}
+
+.Buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.Buttons > button {
+    margin-top: 40px;
+    width: 150px;
+    height: 35px;
+    border: none;
+    outline: none;
+    font-size: 12px;
+    cursor: pointer;
+    transition: var(--Transition_Aninmation);
+}
+
+.Buttons > button:hover {
+    background-color: var(--Hover_Button_Color-1);
+    color: var(--Font_Color-1);
+}
+
+.Gofundme {
+    display: flex;
+    justify-content: center;
+}
+
+.Gofundme > .Text {
+    margin-top: 50px;
+    position: absolute;
+    color: aliceblue;
+    font-size: 13px;
+}
+
+.Gofundme > .Donate {
+    margin-top: 50px;
+}
+
+.Gofundme > .Donate > button {
+    margin-top: 40px;
+    width: 150px;
+    height: 35px;
+    border: none;
+    outline: none;
+    font-size: 12px;
+    cursor: pointer;
+    transition: var(--Transition_Aninmation);
+}
+
+.Gofundme > .Donate > button:hover {
+    background-color: var(--Hover_Button_Color-1);
+    color: var(--Font_Color-1);
+}
+
+.Gofundme > button:hover {
+    background-color: var(--Hover_Button_Color-1);
+    color: var(--Font_Color-1);
+}
+
+
+.New_Products {
+    display: flex;
+    justify-content: center;
+}
+
+.New_Products > .Title {
+    font-size: 18px;
+}
+
+/*----------------------------------------------------------------------------*/
+
+.Store_Window {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: calc(100% - 20px);
+    height: calc(100% - 20px);
+    background-color: rgb(31, 31, 31);
+    display: flex;
+    overflow: hidden;
+    overflow-y: auto;
+    display: none;
+}
+
+.Store_Window > .Close {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+}
+
+.Store_Window > .Close > button {
+    background: none;
+    width: 20px;
+    height: 20px;
+    border: none;
+    outline: none;
+    font-size: 12px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: var(--Transition_Aninmation);
+}
+
+.Store_Window > .Close > button:hover {
+    color: var(--Animation_Color);
+}
+
+.Store_Window > .Side_Menu {
+    position: fixed;
+    width: 150px;
+    height: calc(100% - 20px);
+    background-color: rgb(26, 26, 26);
+}
+
+.Store_Window > .Side_Menu > .Menu {
+    position: absolute;
+    width: 100%;
+    height: calc(100% - 50px);
+
+    top: 50px;
+}
+
+.Store_Window > .Side_Menu > .Menu > span {
+    width: 100%;
+    height: 30px;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    text-indent: 10px;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    transition: var(--Transition_Aninmation);
+}
+.Store_Window > .Side_Menu > .Menu > span:hover {
+    background-color: var(--Animation_Color);
+}
+
+.Store_Window > .Search_Bar {
+    position: absolute;
+    top: 10px;
+    left: 160px;
+}
+
+.Store_Window > .Search_Bar > input {
+    width: 250px;
+    height: 30px;
+    border: none;
+    outline: none;
+    background-color: rgb(26, 26, 26);
+    color: rgb(255, 255, 255);
+    text-indent: 10px;
+    font-size: 11px;
+}
+
+.Store_Window > .Search_Bar > input::placeholder {
+    text-indent: 10px;
+    color: rgb(255, 255, 255);
+    
+}
+
+.Store_Window > .Products {
+    margin-left: 160px;
+    margin-top: 100px;
+    width: calc(100% - 170px);
+    display: flex;
+    justify-content: center;
+}
+
+.Store_Window > .Products > .New_Products {
+    position: relative;
+    margin-top: 50px;
+    width: calc(100% - 20px);
+    height: 260px;
+}
+
+.Store_Window > .Products > .New_Products > .Item_Boxes {
+    width: 100%;
+    height: 220px;
+    display: flex;
+    justify-content: center;
+}
+
+.Store_Window > .Products > .New_Products > .Item_Boxes > .Container {
+    width: calc(100% - 88px);
+    display: flex;
+    gap: 20px;
+}
+
+.Store_Window > .Products > .New_Products > .Item_Boxes > .Container > .Content_Box {
+    position: relative;
+    width: 180px;
+    height: 220px;
+    background-color: rgb(32, 32, 32);
+}
+
+.Store_Window > .Products > .New_Products > .Item_Boxes > .Container > .Content_Box > .Img {
+    width: 180px;
+    height: 180px;
+    background-color: rgba(255, 255, 255, 0.068);
+    display: flex;
+    justify-content: center;
+}
+
+.Store_Window > .Products > .New_Products > .Item_Boxes > .Container > .Content_Box > .Img > .Img_Title {
+    position: absolute;
+    font-size: 11px;
+    top: 10px;
+    color: rgb(255, 255, 255);
+}
+
+.Store_Window > .Products > .New_Products > .Item_Boxes > .Container > .Content_Box > .Img > .Item_Img {
+    position: absolute;
+    top: 60px;
+}
+
+.Store_Window > .Products > .New_Products > .Item_Boxes > .Container > .Content_Box > .Img > .Item_Img > img {
+    height: 120px;
+}
+
+.Store_Window > .Products > .New_Products > .Item_Boxes > .Container > .Content_Box > .Buttons {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+.Store_Window > .Products > .New_Products > .Item_Boxes > .Container > .Content_Box > .Buttons > button {
+    width: 50px;
+    height: 20px;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    outline: none;
+    font-size: 10px;
+    transition: var(--Transition_Aninmation);
+    cursor: pointer;
+}
+
+.Store_Window > .Products > .New_Products > .Item_Boxes > .Container > .Content_Box > .Buttons > button:hover {
+    color: var(--Font_Color-1);
+    background-color: var(--Animation_Color);
+}
+
+.Store_Window > .Products > .New_Products .Slider {
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    gap: 10px;
+}
+
+.Store_Window > .Products > .New_Products > .Slider > button {
+    width: 10px;
+    height: 10px;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: var(--Transition_Aninmation);
+}
+
+.Store_Window > .Products > .New_Products > .Slider > button:hover {
+    background-color: var(--Animation_Color);
+}
+
+.Store_Window > .Products > .Main_Products {
+    position: absolute;
+    margin-top: 400px;
+    width: calc(100% - 170px);
+    height: 300px;
+}
+
+.Store_Window > .Products > .Main_Products > .Page {
+    position: relative;
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.Store_Window > .Products > .Main_Products > .Page > .Container {
+    position: relative;
+    width: calc(100% - 108px);
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.Store_Window > .Products > .Main_Products > .Page > .Container > .Main_Content_Box {
+    position: relative;
+    width: 180px;
+    height: 220px;
+    background-color: rgb(31, 31, 31);
+}
+
+.Store_Window > .Products > .Main_Products > .Page > .Container > .Main_Content_Box > .Main_Img {
+    width: 180px;
+    height: 180px;
+    background-color: rgba(255, 255, 255, 0.068);
+    display: flex;
+    justify-content: center;
+}
+
+.Store_Window > .Products > .Main_Products > .Page > .Container > .Main_Content_Box > .Main_Img > .Main_Img_Title {
+    position: absolute;
+    font-size: 11px;
+    top: 10px;
+    color: rgb(255, 255, 255);
+}
+
+.Store_Window > .Products > .Main_Products > .Page > .Container > .Main_Content_Box > .Main_Img > .Item_Img {
+    position: absolute;
+    top: 60px;
+}
+
+.Store_Window > .Products > .Main_Products > .Page > .Container > .Main_Content_Box > .Main_Img > .Item_Img > img {
+    height: 120px;
+}
+
+.Store_Window > .Products > .Main_Products > .Page > .Container > .Main_Content_Box > .Main_Buttons {
+    position: absolute;
+    display: flex;
+    bottom: 10px;
+    left: 10px;
+    gap: 10px;
+}
+
+.Store_Window > .Products > .Main_Products > .Page > .Container > .Main_Content_Box > .Main_Buttons > button {
+    width: 50px;
+    height: 20px;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    outline: none;
+    font-size: 10px;
+    transition: var(--Transition_Aninmation);
+    cursor: pointer;
+}
+
+.Store_Window > .Products > .Main_Products > .Page > .Container > .Main_Content_Box > .Main_Buttons > button:hover {
+    color: var(--Font_Color-1);
+    background-color: var(--Animation_Color);
+}
+
+/*----------------------------------------------------------------------------*/
+
+.Open_World_Window {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: calc(100% - 20px);
+    height: calc(100% - 20px);
+    background-color: rgb(31, 31, 31);
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    overflow-y: auto;
+    display: none;
+}
+
+.Open_World_Window > .Close {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+}
+
+.Open_World_Window > .Close > button {
+    background: none;
+    width: 20px;
+    height: 20px;
+    border: none;
+    outline: none;
+    font-size: 12px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: var(--Transition_Aninmation);
+}
+
+.Open_World_Window > .Close > button:hover {
+    color: var(--Animation_Color);
+}
+
+.Open_World_Window > .Side_Menu {
+    position: fixed;
+    width: 150px;
+    left: 10px;
+    height: calc(100% - 20px);
+    background-color: rgb(26, 26, 26);
+}
+
+.Open_World_Window > .Icons {
+    position: absolute;
+    top: 30px;
+    left: 180px;
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+}
+
+.Open_World_Window > .Icons > a {
+    cursor: pointer;
+}
+
+.Open_World_Window > .Icons > a > img {
+    width: 100px;
+}
+
+.Open_World_Window > .Title {
+    position: absolute;
+    width: auto;
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Open_World_Window > .Title > .Text_1 {
+    font-size: 30px;
+}
+
+.Open_World_Window > .Title > .Text_2 {
+    font-size: 16px;
+}
+
+/*----------------------------------------------------------------------------*/
+
+.Windows {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(8, 8, 8, 0.795);
+    display: none;
+}
